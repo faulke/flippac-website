@@ -10,6 +10,16 @@ $(document).ready(function () {
     };
     tmp.src = url;
     
+    var image2 = document.getElementById('carousel-pic-2'),
+    url2 = 'images/rowing.jpg';
+    image2.style.backgroundImage = 'images/loading.gif';
+    var tmp2 = new Image();
+    tmp2.onload = function() {
+       image2.style.backgroundImage = "url('"+url2+"')";
+       // or insert some other special effect code here.
+    };
+    tmp2.src = url2;
+    
     //active class for nav buttons
     $("ul li").on("click", function () {
         $(this).addClass("activate");
