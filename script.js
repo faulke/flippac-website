@@ -1,5 +1,6 @@
 $(document).ready(function () {
     
+  //carousel images loading
     var image = document.getElementById('carousel-pic-1'),
     url = 'images/calm.jpg';
     image.style.backgroundImage = 'images/loading.gif';
