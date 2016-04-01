@@ -9,7 +9,7 @@ $(document).ready(function () {
     //moves navbar to top of window on scroll down
     $(window).bind('scroll', function () {
         var navHeight = $(window).height();
-        if ($(window).scrollTop() > navHeight - 40) {
+        if ($(window).scrollTop() > navHeight - 20) {
             $('nav').addClass('navbar-fixed-top');
         } else {
             $('nav').removeClass('navbar-fixed-top');
