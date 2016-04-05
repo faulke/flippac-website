@@ -10,7 +10,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body style="padding-top:2.2%;">
+       <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav top-level">
+                <li><a href="index.html#home">Fearsome FOAR</a></li>
+                <li id="test" class="dropdown"><a  href="#meet">Meet the Team<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Caitlin Miller</a></li>
+                        <li><a href="#">Rower 2</a></li>
+                        <li><a href="#">Rower 3</a></li>
+                        <li><a href="#">Rower 4</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#race">The Race<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Track Us</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                    </ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#sponsers">Sponsors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
     <div class="row">
         <a data-toggle="modal" data-target="#myModal1">
             <div class="col-md-3 profile-container blue">
@@ -19,11 +55,13 @@
                 </div>
             </div>
         </a>
+        <a data-toggle="modal" data-target="#myModal2">
             <div class="col-md-3 profile-container green">
                 <div id="sarah" class="profile">
                     <div class="rotate">SARAH</div>
                 </div>
             </div>
+        </a>
             <div class="col-md-3 profile-container red">
                 <div id="alexa" class="profile">
                     <div class="rotate">ALEXA</div>
@@ -35,19 +73,39 @@
                 </div>
             </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Modal 1-->
+    <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                     <img src="images/profile/cait.jpg">
-                    <h4 class="modal-title" id="myModalLabel">Caitlin Miller</h4>
+                    <h4 class="modal-title">Caitlin Miller</h4>
                 </div>
                 <div class="modal-body">
                     Caitlin is the coolest girl ever.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default btn-prev" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Previous</button>
+                    <button type="button" class="btn btn-default btn-next" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal 2-->
+    <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Alexa</h4>
+                </div>
+                <div class="modal-body">
+                    Bio here.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-prev" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Previous</button>
+                    <button type="button" class="btn btn-default btn-next" data-dismiss="modal" data-toggle="modal" data-target="#myModal3">Next</button>
                 </div>
             </div>
         </div>
