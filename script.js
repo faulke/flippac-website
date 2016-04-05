@@ -1,6 +1,24 @@
 $(document).ready(function () {
     
-  //carousel images loading
+  //pre-load all images
+    var images = new Array()
+    function preload () {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+        }
+    }
+    
+    preload(
+        'images/calm.jpg',
+        'images/rowing.jpg',
+        'images/sunset-on-transit.jpg',
+        'images/profile/donatello.png',
+        'images/profile/raphael.png',
+        'images/profile/michelangelo.png',
+        'images/profile/michelangelo.png'
+    )
+    
     var image = document.getElementById('carousel-pic-1'),
     url = 'images/calm.jpg';
     image.style.backgroundImage = 'images/loading.gif';
