@@ -21,6 +21,17 @@ $(document).ready(function () {
     };
     tmp2.src = url2;
     
+    var image3 = document.getElementById('carousel-pic-3'),
+    url3 = 'images/sunset-on-transit.jpg';
+    image3.style.backgroundImage = 'images/loading.gif';
+    var tmp3 = new Image();
+    tmp3.onload = function() {
+       image3.style.backgroundImage = "url('"+url3+"')";
+       // or insert some other special effect code here.
+    };
+    tmp3.src = url3;
+
+    
     //active class for nav buttons
     $("ul li").on("click", function () {
         $(this).addClass("activate");
@@ -53,4 +64,6 @@ $(document).ready(function () {
         btn.animate({top: "10px"});
         btn.animate({top: "-10px"});
     }, 4000);
+    
+    
 });
