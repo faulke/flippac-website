@@ -279,7 +279,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 100%;
 }
 
-#rower-2{
+#sarah{
     background-image: url("images/profile/raphael.png");
     background-size: cover;
     background-position: center;
@@ -291,7 +291,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 100%;
 }
 
-#rower-3{
+#alexa{
     background-image: url("images/profile/michelangelo.png");
     background-size: cover;
     background-position: center;
@@ -303,7 +303,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     height: 100%;
 }
 
-#rower-4{
+#anna{
     background-image: url("images/profile/leonardo.png");
     background-size: cover;
     background-position: center;
