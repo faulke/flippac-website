@@ -246,11 +246,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
     text-shadow: 1px 1px 1px black;
     writing-mode: vertical-lr;
     text-orientation: upright;
+    margin-left: 5%;
 }
 
 .profile-container:hover .rotate{
     display: block;
-    font-size: 6em !important;
+    font-size:calc(2em + 4vw); !important;
 }
 
 
