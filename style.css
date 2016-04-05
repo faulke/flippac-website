@@ -235,8 +235,20 @@ now override the 3.3 new styles for modern browsers & apply opacity
     text-align: center;
 }
 
-.profile-container:hover{
-    background-color: rgba(0,0,0,.3);
+.blue:hover{
+    background-color: rgba(0, 0, 255, .3);
+}
+
+.green:hover{
+    background-color: rgba(0, 255, 0, .3);
+}
+
+.red:hover{
+    background-color: rgba(255, 0, 0, .3);
+}
+
+.purple:hover{
+    background-color: rgba(100, 0, 255, .3);
 }
 
 
