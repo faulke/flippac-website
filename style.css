@@ -266,9 +266,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     font-size:calc(2em + 4vw); !important;
 }
 
-
-#caitlin{
-    background-image: url("images/profile/donatello.png");
+.profile{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -277,45 +275,29 @@ now override the 3.3 new styles for modern browsers & apply opacity
     -o-background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+#caitlin{
+    background-image: url("images/profile/donatello.png");
 }
 
 #sarah{
     background-image: url("images/profile/raphael.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: 100%;
 }
 
 #alexa{
     background-image: url("images/profile/michelangelo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: 100%;
 }
 
 #anna{
     background-image: url("images/profile/leonardo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: 100%;
+
 }
 
 img{
     width: 20% !important;
 }
 
+.btn-prev{
+    float: left !important;
+}
