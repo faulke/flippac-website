@@ -83,5 +83,14 @@ $(document).ready(function () {
         btn.animate({top: "-10px"});
     }, 4000);
     
-    
+    //navbar close
+    $('body').bind('click', function(e) {
+        if($(e.target).closest('.navbar').length == 0) {
+            // click happened outside of .navbar, so hide
+            var opened = $('.navbar-collapse').hasClass('collapse in');
+            if ( opened === true ) {
+                $('.navbar-collapse').collapse('hide');
+            }
+        }
+    });
 });
