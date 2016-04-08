@@ -1,11 +1,27 @@
 $(document).ready(function () {
     
+    
+    //active class for nav buttons
+    $("ul li").on("click", function () {
+        $(this).addClass("activate");
+        $(this).siblings().removeClass("activate");
+        $("#trans").addClass("black");
+        
+     /*   if (clicked = false){
+            $(".carousel").each(function () {
+                $(this).carousel({interval: false});
+                clicked = true;
+            });
+        } else */
+    });
+
   //pre-load all images
-    var images = new Array()
-    function preload () {
+    var images = [],
+        i;
+    function preload() {
         for (i = 0; i < preload.arguments.length; i++) {
-            images[i] = new Image()
-            images[i].src = preload.arguments[i]
+            images[i] = new Image();
+            images[i].src = preload.arguments[i];
         }
     }
     
@@ -17,10 +33,10 @@ $(document).ready(function () {
         'images/profile/raphael.png',
         'images/profile/michelangelo.png',
         'images/profile/michelangelo.png'
-    )
+    );
     
     var image = document.getElementById('carousel-pic-1'),
-    url = 'images/calm.jpg';
+        url = 'images/calm.jpg';
     image.style.backgroundImage = 'images/loading.gif';
     var tmp = new Image();
     tmp.onload = function() {
@@ -54,34 +70,17 @@ $(document).ready(function () {
     $("ul li").on("click", function () {
         $(this).addClass("activate");
         $(this).siblings().removeClass("activate");
-    });
-    
-    //moves navbar to top of window on scroll down
-    $(window).bind('scroll', function () {
-        var navHeight = $(window).height();
-        if ($(window).scrollTop() > navHeight - 10) {
-            $('nav').addClass('navbar-fixed-top');
-        } else {
-            $('nav').removeClass('navbar-fixed-top');
-        }
+        $('#trans').addClass('black')
     });
 
-    //slow scroll to sections
-    $('a[href*="#"]').click(function (event) {
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1700);
-        event.preventDefault();
-    });
-    
-    //bouncing scroll down button
+/*    //bouncing scroll down button
     setInterval(function () {
         var btn = $('.btn-container');
         btn.animate({top: "10px"});
         btn.animate({top: "-10px"});
         btn.animate({top: "10px"});
         btn.animate({top: "-10px"});
-    }, 4000);
+    }, 4000);  */
     
     //navbar close
     $('body').bind('click', function(e) {
@@ -93,4 +92,15 @@ $(document).ready(function () {
             }
         }
     });
+    
+    var links = document.getElementById('myNavbar').getElementsByTagName('a')
+    
+    $('#myNavbar ul li a').click(function(e){
+        $('#profile-bin').fadeIn(1000).siblings().fadeOut(1000);
+        e.preventDefault()
+    })
+    
+    
+    
 });
+    

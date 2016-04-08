@@ -7,6 +7,8 @@ h1,
 h2,
 .nav > li > a {
     font-family: Raleway;
+    font-weight: bold;
+    
 }
 
 .activate{
@@ -18,18 +20,28 @@ h2,
     box-shadow: 2px 4px 3px black;
 }
 
+.black{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: 99999 !important;
+}
 
 /**** HOMEPAGE ****/
 
 /* Navigation bar */
 .navbar{
-    margin: 0;
+    margin-bottom: 1%;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    z-index: 999999;
+    
 }
 
-.navbar-fixed-top,
+.navbar-fixed-bottom,
 .navbar-default{
-    background-color: cadetblue;
-    border-bottom: none;
     padding-top: 4px;
     padding-bottom: 0px;
 }
@@ -53,35 +65,36 @@ h2,
     border-radius: 3%;
 }
 
+.top-level li:after {
+  content: "";
+  border-bottom: solid 3px;
+  display: block;
+  padding: 1%;
+  margin: 0% 10% 2%;
+  border-radius: 10px;
+  color: white;
+}
+
 .top-level > li:hover {
     background-color: rgba(0,0,0,0.3);
 }
 
 .top-level > li > a{
     color: white !important;
+    font-weight: bold;
 }
 
-.dropdown-menu > li > a {
-    background-color: cadetblue;
-    color: white;
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: lightgray !important;
 }
 
-.dropdown-menu > li > a:hover {
-    background-color: white;
+.navbar-default .navbar-toggle:focus{
+    background-color: rgba(0,0,0,0.3) !important;
 }
 
-.dropdown:hover .dropdown-menu{
-    display: inline-block;
-    margin-left: 0;
-    margin-top: 0;
-}
-
-.dropdown-menu {
-    padding: 0;
-    left: 50%;
-    right: auto;
-    text-align: center;
-    transform: translate(-50%, 0);
+.navbar-default .navbar-toggle:hover{
+    background-color: rgba(0,0,0,0.3) !important;
 }
 
 /* Scroll button */
@@ -121,18 +134,6 @@ button:focus{
     outline: none !important;
 }
 
-.navbar-default .navbar-toggle .icon-bar{
-    background-color: lightgray !important;
-}
-
-.navbar-default .navbar-toggle:focus{
-    background-color: rgba(0,0,0,0.3) !important;
-}
-
-.navbar-default .navbar-toggle:hover{
-    background-color: rgba(0,0,0,0.3) !important;
-}
-
 /* Scroll button */
 .scroll-btn{
     color: white;
@@ -147,6 +148,14 @@ button:focus{
 }
  
 /* Image carousel */
+
+#myCarousel{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
 .carousel,
 .item,
 .active{
@@ -214,6 +223,14 @@ button:focus{
   z-index: 2;
 }
 
+.carousel-indicators {
+    bottom: 10%;
+}
+
+.carousel-indicators li{
+    font-weight: bold;
+}
+
 /*
 WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
 now override the 3.3 new styles for modern browsers & apply opacity
@@ -240,6 +257,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
 }
 
+
 /* Main page */
 .jumbotron{
     height: 100%;
@@ -251,6 +269,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 /* Meet the Team page */
 .row{
     height: 100%;
+    width: 100%;
+    margin: none;
+    overflow: hidden
 }
 .profile-container{
     height: 100%;
@@ -259,6 +280,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     border: solid 2px black;
     position: relative;
     text-align: center;
+    overflow:hidden
 }
 
 .blue:hover{
@@ -330,20 +352,20 @@ img{
 
 /*Media queries for responsive design*/
 /* For desktop: */
-.col-md-1 {width: 8.33%;}
-.col-md-2 {width: 16.66%;}
-.col-md-3 {width: 25%;}
-.col-md-4 {width: 33.33%;}
-.col-md-5 {width: 41.66%;}
-.col-md-6 {width: 50%;}
-.col-md-7 {width: 58.33%;}
-.col-md-8 {width: 66.66%;}
-.col-md-9 {width: 75%;}
-.col-md-10 {width: 83.33%;}
-.col-md-11 {width: 91.66%;}
-.col-md-12 {width: 100%;}
+/*.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;} */
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width 900px) {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
@@ -385,4 +407,13 @@ img{
     .collapse.in{
   		display:block !important;
 	}
+}
+
+#profile-bin{
+    height: 100%;
+    width: 100%;
+    margin: none;
+    padding: none;
+    position: absolute;
+    display: none;
 }
