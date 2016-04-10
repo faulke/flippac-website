@@ -1,5 +1,14 @@
 $(document).ready(function () {
     
+    //bouncing scroll down button
+    setInterval(function () {
+        var btn = $('.btn-container');
+        btn.animate({top: "10px"});
+        btn.animate({top: "-10px"});
+        btn.animate({top: "10px"});
+        btn.animate({top: "-10px"});
+    }, 4000);
+    
   //pre-load all images
     var images = new Array()
     function preload () {
@@ -19,7 +28,7 @@ $(document).ready(function () {
         'images/profile/michelangelo.png'
     )
     
-    var image = document.getElementById('carousel-pic-1'),
+   /* var image = document.getElementById('carousel-pic-1'),
     url = 'images/calm.jpg';
     image.style.backgroundImage = 'images/loading.gif';
     var tmp = new Image();
@@ -48,6 +57,8 @@ $(document).ready(function () {
        // or insert some other special effect code here.
     };
     tmp3.src = url3;
+    
+    */
 
     
     //active class for nav buttons
@@ -73,15 +84,6 @@ $(document).ready(function () {
         }, 1700);
         event.preventDefault();
     });
-    
-    //bouncing scroll down button
-    setInterval(function () {
-        var btn = $('.btn-container');
-        btn.animate({top: "10px"});
-        btn.animate({top: "-10px"});
-        btn.animate({top: "10px"});
-        btn.animate({top: "-10px"});
-    }, 4000);
     
     //navbar close
     $('body').bind('click', function(e) {

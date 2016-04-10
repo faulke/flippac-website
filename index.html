@@ -11,55 +11,10 @@
 </head>
 
 <body>
-    <div class="anchor"></div>
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div id="carousel-pic-1" class="fill"></div>
-                <div class="carousel-caption">
-                    <h1>Crossing an Ocean for All</h1>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div id="carousel-pic-2" class="fill"></div>
-                <div class="carousel-caption">
-                  <a href="meet.html"><button class="btn btn-danger"><h2>Meet the Team</h2></button></a>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div id="carousel-pic-3" class="fill"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>
-        </div>
-        <!-- Scroll down button -->
-        <div class="btn-wrapper">
-            <div class="btn-container">
-                <a href="#home"><span id="scroll-btn" class="glyphicon glyphicon-menu-down scroll-btn"><a href="#home"></span></a>
-            </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev" onclick="this.blur();">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next" onclick="this.blur();">
-            <span class="icon-next"></span>
-        </a>
-    </div>
+    <div class="container-fluid">
+    <div class="container">
     <!--Navigation bar-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -70,22 +25,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav top-level">
-                <li><a href="#home">Fearsome FOAR</a></li>
-                <li id="test" class="dropdown"><a  href="#meet">Meet the Team<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Caitlin Miller</a></li>
-                        <li><a href="#">Rower 2</a></li>
-                        <li><a href="#">Rower 3</a></li>
-                        <li><a href="#">Rower 4</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#race">The Race<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Track Us</a></li>
-                        <li><a href="#">Option 3</a></li>
-                        <li><a href="#">Option 4</a></li>
-                    </ul>
+                <li><a href="#home">About</a></li>
+                <li><a href="#meet">Meet the Team</a></li>
+                <li><a href="#race">The Race</a></li>
+                <li><a href="#meet">Land Crew</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#donate">Donate</a></li>
                 <li><a href="#sponsers">Sponsors</a></li>
@@ -94,8 +37,16 @@
         </div>
         </div>
     </nav>
-
-    <div class="jumbotron" id="home">
+    </div>
+        <div class="text-center" style="margin-top:10%; position: relative;"><h1 style="color: white;">Fearsome FOAR</h1></div>
+        <!-- Scroll down button -->
+        <div class="btn-wrapper">
+            <div class="btn-container">
+                <a href="#home"><span id="scroll-btn" class="glyphicon glyphicon-menu-down scroll-btn"><a href="#home"></span></a>
+            </div>
+        </div>
+    </div>
+        <div id="home"class="jumbotron">
     </div>
 </body>
 </html>

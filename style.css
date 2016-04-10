@@ -1,6 +1,48 @@
-html,
-body{
-    height: 100%
+html, body{
+  height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('images/sunset-on-transit.jpg');
+    background-size: cover;
+    position: absolute;
+}
+
+.container-fluid{
+    height: 100%;
+    
+}
+
+.scroll-btn{
+    color: white;
+    font-size: 300%;
+    border-color: white !important;
+    margin-bottom: 1%;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 2px 4px 3px black;
+    border: 4px solid white;    
+    border-radius: 100%;
+}
+
+
+.btn-wrapper{
+    position: relative;
+    text-align: center;
+    top: 25%;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-container{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1,
@@ -9,13 +51,12 @@ h2,
     font-family: Raleway;
 }
 
-.activate{
-    color: rgba(0,0,0,0.3)
+.container1 {
+    height: 100%;
 }
 
-.btn-danger{
-    background-color: #ff6666 !important;
-    box-shadow: 2px 4px 3px black;
+.activate{
+    color: rgba(0,0,0,0.7)
 }
 
 
@@ -28,7 +69,7 @@ h2,
 
 .navbar-fixed-top,
 .navbar-default{
-    background-color: cadetblue;
+    background-color: transparent;
     border-bottom: none;
     padding-top: 4px;
     padding-bottom: 0px;
@@ -45,6 +86,11 @@ h2,
     margin: 0;
 }
 
+.jumbotron{
+    width: 100%;
+    height: 1000px;
+}
+
 .top-level > li {
     padding-left: 1vw;
     padding-right: 1vw;
@@ -53,8 +99,16 @@ h2,
     border-radius: 3%;
 }
 
+.brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
 .top-level > li:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .top-level > li > a{
@@ -82,25 +136,6 @@ h2,
     right: auto;
     text-align: center;
     transform: translate(-50%, 0);
-}
-
-/* Scroll button */
-.btn-wrapper{
-    position: relative;
-    text-align: center;
-    top: -25%;
-    margin: 0;
-    padding: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.btn-container{
-    position: relative;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
 a{
@@ -134,19 +169,9 @@ button:focus{
 }
 
 /* Scroll button */
-.scroll-btn{
-    color: white;
-    font-size: 300%;
-    border-color: white !important;
-    z-index: 99;
-    margin-bottom: 1%;
-    text-shadow: 2px 4px 3px black;
-    box-shadow: 2px 4px 3px black;
-    border: 4px solid white;    
-    border-radius: 100%;
-}
  
 /* Image carousel */
+/*
 .carousel,
 .item,
 .active{
@@ -218,7 +243,7 @@ button:focus{
 WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
 now override the 3.3 new styles for modern browsers & apply opacity
 */
-@media all and (transform-3d), (-webkit-transform-3d) {
+/*@media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
       opacity: 0;
@@ -239,14 +264,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
               transform: translate3d(0, 0, 0);
     }
 }
-
-/* Main page */
-.jumbotron{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 
 /* Meet the Team page */
 .row{
