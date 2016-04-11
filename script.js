@@ -9,8 +9,9 @@ $(document).ready(function () {
         btn.animate({top: "-10px"});
     }, 4000);
     
-  //pre-load all images
-    var images = new Array()
+  /*
+    //pre-load all images
+    var images = []
     function preload () {
         for (i = 0; i < preload.arguments.length; i++) {
             images[i] = new Image()
@@ -26,10 +27,10 @@ $(document).ready(function () {
         'images/profile/raphael.png',
         'images/profile/michelangelo.png',
         'images/profile/michelangelo.png'
-    )
+    ) */
     
-   /* var image = document.getElementById('carousel-pic-1'),
-    url = 'images/calm.jpg';
+    var image = document.getElementById('landing'),
+    url = 'sunset-on-transit.jpg';
     image.style.backgroundImage = 'images/loading.gif';
     var tmp = new Image();
     tmp.onload = function() {
@@ -37,29 +38,6 @@ $(document).ready(function () {
        // or insert some other special effect code here.
     };
     tmp.src = url;
-    
-    var image2 = document.getElementById('carousel-pic-2'),
-    url2 = 'images/rowing.jpg';
-    image2.style.backgroundImage = 'images/loading.gif';
-    var tmp2 = new Image();
-    tmp2.onload = function() {
-       image2.style.backgroundImage = "url('"+url2+"')";
-       // or insert some other special effect code here.
-    };
-    tmp2.src = url2;
-    
-    var image3 = document.getElementById('carousel-pic-3'),
-    url3 = 'images/sunset-on-transit.jpg';
-    image3.style.backgroundImage = 'images/loading.gif';
-    var tmp3 = new Image();
-    tmp3.onload = function() {
-       image3.style.backgroundImage = "url('"+url3+"')";
-       // or insert some other special effect code here.
-    };
-    tmp3.src = url3;
-    
-    */
-
     
     //active class for nav buttons
     $("ul li").on("click", function () {
