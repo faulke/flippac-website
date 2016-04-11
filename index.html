@@ -11,10 +11,88 @@
 </head>
 
 <body>
+    <div class="modals"> 
+    <!-- Modal 1-->
+        <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <img src="images/profile/cait.jpg">
+                        <h4 class="modal-title">Caitlin Miller</h4>
+                    </div>
+                    <div class="modal-body">
+                        Caitlin is the coolest girl ever.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Previous</button>
+                        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal 2-->
+        <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <img src="">
+                        <h4 class="modal-title">Sarah</h4>
+                    </div>
+                    <div class="modal-body">
+                        Bio here.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Previous</button>
+                        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal 3-->
+        <div class="modal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <img src="">
+                        <h4 class="modal-title">Alexa</h4>
+                    </div>
+                    <div class="modal-body">
+                        Bio here.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Previous</button>
+                        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal4" data-dismiss="modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal 4-->
+        <div class="modal" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <img src="">
+                        <h4 class="modal-title">Anna</h4>
+                    </div>
+                    <div class="modal-body">
+                        Bio here.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Previous</button>
+                        <button type="button" class="btn btn-default btn-next" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
     <div class="container">
     <!--Navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -38,7 +116,7 @@
         </div>
     </nav>
     </div>
-        <div class="text-center" style="margin-top:10%; position: relative;"><h1 style="color: white;">Fearsome FOAR</h1></div>
+        <div class="text-center" style="margin-top:15%; position: relative;"><h1 style="color: white;">Fearsome FOAR</h1></div>
         <!-- Scroll down button -->
         <div class="btn-wrapper">
             <div class="btn-container">
@@ -46,7 +124,49 @@
             </div>
         </div>
     </div>
-        <div id="home"class="jumbotron">
+    <div id="home" class="jumbotron">
+    </div>
+    <div id="meet" class="anchor"></div>
+    <div class="title text-center">
+        <h1>Meet the Team</h1>
+    </div>
+    <div class="container-fluid">
+            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+                <a data-toggle="modal" data-target="#myModal1">
+                    <div class="profile-container">
+                        <div id="caitlin" class="profile inner">
+                            <div class="appear">CAITLIN</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+                <a data-toggle="modal" data-target="#myModal2">
+                    <div class="profile-container">
+                        <div id="sarah" class="profile inner">
+                            <div class="appear">SARAH</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+                <a data-toggle="modal" data-target="#myModal3">
+                    <div class="profile-container">
+                        <div id="alexa" class="profile inner">
+                            <div class="appear">ALEXA</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+                <a data-toggle="modal" data-target="#myModal4">
+                    <div class="profile-container">
+                        <div id="anna" class="profile inner">
+                            <div class="appear">ANNA</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
     </div>
 </body>
 </html>
