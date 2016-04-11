@@ -30,7 +30,7 @@ $(document).ready(function () {
     ) */
     
     var image = document.getElementById('landing'),
-    url = 'sunset-on-transit.jpg';
+    url = 'images/sunset-on-transit.jpg';
     image.style.backgroundImage = 'images/loading.gif';
     var tmp = new Image();
     tmp.onload = function() {

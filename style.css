@@ -10,7 +10,7 @@ html, body{
 .container{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('images/sunset-on-transit.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) );
     background-size: cover;
     position: absolute;
     margin: 0;
