@@ -1,36 +1,47 @@
 html, body{
   height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .anchor{
     margin-bottom: 6%;
+    margin-right: 0;
 }
 
-.container{
+.modals{
+    margin: 0;
+    padding: 0;
+}
+
+#landing{
     height: 100%;
     width: 100%;
     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    position: absolute;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+#header-title{
+    margin-top: 5%;
+    color: white; 
+    font-family:'Walter Turncoat',cursive; 
+    font-size: calc(1em + .5vh)
 }
 
 .navbar-toggle{
     margin-top: 1%;
 }
 
-.container-fluid{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    
-}
-
 .scroll-btn{
     color: white;
-    font-size: 300%;
+    font-size: 250%;
     border-color: white !important;
     margin-bottom: 1%;
     text-shadow: 2px 4px 3px black;
@@ -43,10 +54,9 @@ html, body{
 .btn-wrapper{
     position: relative;
     text-align: center;
-    top: 50%;
-    margin: 0;
+    top: 10%;
+    margin-top: 10%;
     padding: 0;
-    margin: 0;
     padding: 0;
 }
 
@@ -70,6 +80,30 @@ h2,
 
 .activate{
     color: rgba(0,0,0,0.7)
+}
+
+/**** MODALS *****/
+.modal-dialog{
+    height: 90%;
+}
+
+.modal-content{
+    height: 100%;
+}
+
+.modal-header{
+    position: relative;
+}
+
+.modal-body{
+    position: relative;
+    height: 80%;
+}
+
+.modal-footer{
+    position: relative;
+    opacity: 1 !important;
+    background-color: white !important;
 }
 
 
@@ -97,14 +131,10 @@ h2,
 }
 
 .navbar .navbar-collapse {
+    width: 100%;
     text-align: center;
     padding:0;
     margin: 0;
-}
-
-.jumbotron{
-    width: 100%;
-    height: 1000px;
 }
 
 .top-level > li {
@@ -115,22 +145,15 @@ h2,
     border-radius: 3%;
 }
 
-.brand
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-}
-
-.top-level > li:hover {
-    background-color: rgba(0,0,0,0.7);
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: rgba(0,0,0,0.6) !important;
 }
 
 .top-level > li > a{
     color: white !important;
 }
 
+/*
 .dropdown-menu > li > a {
     background-color: cadetblue;
     color: white;
@@ -153,6 +176,7 @@ h2,
     text-align: center;
     transform: translate(-50%, 0);
 }
+*/
 
 a{
     cursor: pointer;
@@ -281,17 +305,58 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
 }
 
+/* About page */
+.section2{
+    height: 75%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.jumbotron{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0;
+}
+
 /* Meet the Team page */
+#meet{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
 .title{
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.section3{
+    height: 50%;
+}
+
+.row{
+    height: 100%;
 }
 
 .outer{
-    height: 75%;
+    height: 50%;
     text-align: center;
+    margin-top: 2%;
+}
+
+.profile-container{
+    position: relative;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin 0; 
+    padding: 0;
 }
 
 .inner{
+    position: relative;
     width: 100%;
     height: 100%;
     border: solid 2px black;
@@ -299,77 +364,74 @@ now override the 3.3 new styles for modern browsers & apply opacity
     padding: 0;
 }
 
-.profile-container{
-    background-color: transparent;
-    height: 80%;
-}
-
-
-.blue:hover{
-    background-color: rgba(0, 0, 255, .3);
-}
-
-.green:hover{
-    background-color: rgba(0, 255, 0, .3);
-}
-
-.red:hover{
-    background-color: rgba(255, 0, 0, .3);
-}
-
-.purple:hover{
-    background-color: rgba(100, 0, 255, .3);
-}
-
-.appear{
-    display: none;
+.dialog{
     position: absolute;
+    bottom: -100%;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
     width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.profile-container:hover .dialog{
     bottom: 0;
-    font-size: calc(1em + 6vh);
 }
 
 .profile{
     position: relative;
     background-size:cover;
     height: 100%;
-    -webkit-transition: all 1s ease;
+   /* -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    transition: all 1s ease; */
     text-align: center;
     overflow: hidden;
 }
 
-.profile-container:hover .appear{
+/*.profile-container:hover .appear{
     display: block;
-}
-
-.profile:hover{
-    background-color: rgba(0,0,0,.3)
-}
-
+} */
 
 /*.profile:hover {
     -webkit-filter: blur(2px);
 } */
 
 #caitlin{
-    background-image: url("images/profile/donatello.png");
+    background-image: url("images/profile/cait.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #sarah{
     background-image: url("images/profile/raphael.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #alexa{
     background-image: url("images/profile/michelangelo.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #anna{
-    background-image: url("images/profile/leonardo.png");
-
+    background-image: url("images/profile/donatello.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -382,15 +444,69 @@ img{
     float: left !important;
 }
 
-@media (max-width: 1050px) {
+@media only screen and (max-width: 1075px) {
 
   [class*="col-"]{
       margin-bottom: 1%;
   }
 
+}
+
+@media only screen and (max-width: 989px) {
+    .outer{
+        height: 50%;
+    }
+    .section3{
+        height: 100%;
+    }
+}
 
 
-@media (max-width: 1050px) {
+@media only screen and (max-width: 500px) {
+    .outer{
+        height: 40%;
+        
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .title{
+        margin-top: 20%;
+    }
+    
+    .outer{
+        height: 30%;
+    }
+}
+
+@media only screen and (max-height: 716px) {
+    .outer{
+        height: 75%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .outer{
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .scroll-btn{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-height: 350px){
+    .btn-wrapper{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
     .navbar-header {
         float: none;
     }

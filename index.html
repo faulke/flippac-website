@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Walter+Turncoat">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,10 +20,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <img src="images/profile/cait.jpg">
                         <h4 class="modal-title">Caitlin Miller</h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" style="background-image: url('images/profile/cait.jpg'); background-size:cover;">
                         Caitlin is the coolest girl ever.
                     </div>
                     <div class="modal-footer">
@@ -37,11 +38,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <img src="">
                         <h4 class="modal-title">Sarah</h4>
                     </div>
-                    <div class="modal-body">
-                        Bio here.
+                    <div class="modal-body" style="background-image: url('images/profile/cait.jpg'); background-size:cover;">
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Previous</button>
@@ -56,11 +56,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <img src="">
                         <h4 class="modal-title">Alexa</h4>
                     </div>
-                    <div class="modal-body">
-                        Bio here.
+                    <div class="modal-body" style="background-image: url('images/profile/cait.jpg'); background-size:cover;">
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Previous</button>
@@ -75,11 +74,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <img src="">
                         <h4 class="modal-title">Anna</h4>
                     </div>
-                    <div class="modal-body">
-                        Bio here.
+                    <div class="modal-body" style="background-image: url('images/profile/cait.jpg'); background-size:cover;">
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default btn-prev" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Previous</button>
@@ -89,34 +87,30 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-    <div id="landing" class="container">
-    <!--Navigation bar-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav top-level">
-                <li><a href="#home">About</a></li>
-                <li><a href="#meet">Meet the Team</a></li>
-                <li><a href="#race">The Race</a></li>
-                <li><a href="#meet">Land Crew</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#donate">Donate</a></li>
-                <li><a href="#sponsers">Sponsors</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    </div>
-        <div class="text-center" style="margin-top:15%; position: relative;"><h1 style="color: white;">Fearsome FOAR</h1></div>
+    <div id="landing" class="container-fluid">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav top-level">
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#meet">Meet the Team</a></li>
+                    <li><a href="#race">The Race</a></li>
+                    <li><a href="#meet">Land Crew</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#sponsers">Sponsors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="header-title" class="text-center" style="margin-top:5%;"><h1 style="color: white; font-family:'Walter Turncoat',cursive; font-size: calc(4em + 2vw)">fearsome fOAR</h1></div>
         <!-- Scroll down button -->
         <div class="btn-wrapper">
             <div class="btn-container">
@@ -124,49 +118,72 @@
             </div>
         </div>
     </div>
-    <div id="home" class="jumbotron">
+    <div class="section2 container-fluid">
+        <div id="home" class="jumbotron"></div>
     </div>
     <div id="meet" class="anchor"></div>
     <div class="title text-center">
         <h1>Meet the Team</h1>
     </div>
-    <div class="container-fluid">
-            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+    <div class="section3 container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2 col-sm-6 col-xs-12 outer">
                 <a data-toggle="modal" data-target="#myModal1">
                     <div class="profile-container">
                         <div id="caitlin" class="profile inner">
-                            <div class="appear">CAITLIN</div>
+                            <div class="dialog">
+                                <div class="name-header">
+                                    <h3 style="color:white; position:relative;">Caitlin Miller</h3>
+                                    <h4 style="color:white; position:relative;">Rower</h4>
+                                    <h5 style="color:white; position:relative; margin-top: 30%;">Click for details.</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+            <div class="col-md-2 col-sm-6 col-xs-12 outer">
                 <a data-toggle="modal" data-target="#myModal2">
                     <div class="profile-container">
                         <div id="sarah" class="profile inner">
-                            <div class="appear">SARAH</div>
+                            <div class="dialog">
+                                <div class="name-header">
+                                    <h3 style="color:white;">Sarah</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+            <div class="col-md-2 col-sm-6 col-xs-12 outer">
                 <a data-toggle="modal" data-target="#myModal3">
                     <div class="profile-container">
                         <div id="alexa" class="profile inner">
-                            <div class="appear">ALEXA</div>
+                            <div class="dialog">
+                                <div class="name-header">
+                                    <h3 style="color:white;">Alexa</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 outer">
+            <div class="col-md-2 col-sm-6 col-xs-12 outer">
                 <a data-toggle="modal" data-target="#myModal4">
                     <div class="profile-container">
                         <div id="anna" class="profile inner">
-                            <div class="appear">ANNA</div>
+                            <div class="dialog">
+                                <div class="name-header">
+                                    <h3 style="color:white;">Anna</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
             </div>
+            <div class="col-md-2"></div>
+        </div>
     </div>
 </body>
 </html>
