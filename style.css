@@ -29,7 +29,7 @@ html, body{
 }
 
 #header-title{
-    margin-top: 5%;
+    margin-top: 15%;
     color: white; 
     font-family:'Walter Turncoat',cursive; 
     font-size: calc(1em + .5vh)
@@ -326,9 +326,16 @@ now override the 3.3 new styles for modern browsers & apply opacity
     background-color: gray;
 }
 
-.title{
+.title-wrapper{
     margin-bottom: 2%;
-    margin-top: 4%;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    width: 100%;
+    margin: 0 auto;
 }
 
 .section3{
@@ -359,7 +366,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
     position: relative;
     width: 100%;
     height: 100%;
-    border: solid 2px black;
     margin: 0;
     padding: 0;
 }
@@ -434,12 +440,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
     background-size: cover;
 }
 
-
-
-img{
-    width: 20% !important;
-}
-
 .btn-prev{
     float: left !important;
 }
@@ -449,6 +449,10 @@ img{
   [class*="col-"]{
       margin-bottom: 1%;
   }
+    
+    .title-wrapper{
+        margin-top: 10%;
+    }
 
 }
 
@@ -461,20 +465,24 @@ img{
     }
 }
 
-
 @media only screen and (max-width: 500px) {
+    .title{
+        margin-top: 15%;
+    }
+    
     .outer{
         height: 40%;
-        
     }
+    
+}
 
+@media only screen and (max-width: 377px) {
+    .title{
+        margin-top: 30%;
+    }
 }
 
 @media only screen and (max-width: 350px) {
-    .title{
-        margin-top: 20%;
-    }
-    
     .outer{
         height: 30%;
     }

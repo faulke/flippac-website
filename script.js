@@ -45,6 +45,7 @@ $(document).ready(function () {
         $(this).siblings().removeClass("activate");
     });
     
+  /*
     //moves navbar to top of window on scroll down
     $(window).bind('scroll', function () {
         var navHeight = $(window).height();
@@ -53,7 +54,7 @@ $(document).ready(function () {
         } else {
             $('nav').removeClass('navbar-fixed-top');
         }
-    });
+    }); */
 
     //slow scroll to sections
     $('a[href*="#"]').click(function (event) {
@@ -73,5 +74,9 @@ $(document).ready(function () {
             }
         }
     });
+    
+    $('.nav a').on('click', function(){
+        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
     
 });
