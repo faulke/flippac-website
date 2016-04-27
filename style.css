@@ -5,6 +5,11 @@ html, body{
   padding: 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    }
+
 .anchor{
     margin-bottom: 6%;
     margin-right: 0;
