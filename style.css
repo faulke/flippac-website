@@ -309,28 +309,31 @@ footer {
 }
 
 .profile-pic {
+  width: 100%;
+	padding-bottom: 100%;
+	height: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.profile-pic:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.profile-pic .details {
   display: block;
-    width: 100%;
-    height: 88%;
-    margin: 0;
-    padding: 0;
-}
-
-figure img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-figure:hover img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
-
-.profile-pic img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .btn-prev{
