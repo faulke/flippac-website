@@ -282,105 +282,55 @@ footer {
 }
 
 .section3{
-    height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
-.row{
-    height: 100%;
+.profile-container {
+  text-align: center;
+  width: 100%;
+  height: 50%;
 }
 
-.outer{
-    height: 50%;
-    text-align: center;
-    margin-top: 2%;
+.profile-title {
+  height: 12%;
+  text-align: center;
 }
 
-.profile-container{
+.profile-item {
     position: relative;
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 22%;
     overflow: hidden;
-    margin 0;
+    margin: 0 1% 0 1%;
     padding: 0;
+    display: inline-block;
+    z-index: 100;
 }
 
-.inner{
-    position: relative;
+.profile-pic {
+  display: block;
     width: 100%;
-    height: 100%;
+    height: 88%;
     margin: 0;
     padding: 0;
 }
 
-.dialog{
-    position: absolute;
-    bottom: -100%;
-    background-color: rgba(0,0,0,0.6);
-    height: 100%;
-    width: 100%;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-.profile-container:hover .dialog{
-    bottom: 0;
+figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
-.profile{
-    position: relative;
-    background-size:cover;
-    height: 100%;
-   /* -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease; */
-    text-align: center;
-    overflow: hidden;
-}
-
-/*.profile-container:hover .appear{
-    display: block;
-} */
-
-/*.profile:hover {
-    -webkit-filter: blur(2px);
-} */
-
-#caitlin{
-    background-image: url("images/profile/cait.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#sarah{
-    background-image: url("images/profile/raphael.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#alexa{
-    background-image: url("images/profile/michelangelo.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#anna{
-    background-image: url("images/profile/donatello.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.profile-pic img {
+  max-width: 100%;
+  height: auto;
 }
 
 .btn-prev{
@@ -400,23 +350,19 @@ footer {
 }
 
 @media only screen and (max-width: 989px) {
-    .outer{
-        height: 50%;
-    }
-    .section3{
-        height: 100%;
-    }
+
 }
 
 @media only screen and (max-width: 500px) {
-    .title{
+  .profile-container {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
         margin-top: 15%;
     }
-
-    .outer{
-        height: 40%;
-    }
-
 }
 
 @media only screen and (max-width: 377px) {
@@ -426,19 +372,19 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
-    .outer{
+    .profile-item{
         height: 30%;
     }
 }
 
 @media only screen and (max-height: 716px) {
-    .outer{
+    .profile-item{
         height: 75%;
     }
 }
 
 @media only screen and (max-height: 400px) {
-    .outer{
+    .profile-item{
         height: 100%;
     }
 }
