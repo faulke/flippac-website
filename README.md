@@ -1,4 +1,4 @@
-# rowing-website
-Website for Caitlin's 2017 row across the Atlantic (in progress)
+# flippac-website
+Website for my Flippac camper build and expedition trip reports.
 
-http://faulke.github.io/rowing-website/
+http://faulke.github.io/flippac-website/
