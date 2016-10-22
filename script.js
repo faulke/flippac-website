@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     //bouncing scroll down button
     setInterval(function () {
         var btn = $('.btn-container');
@@ -8,7 +8,7 @@ $(document).ready(function () {
         btn.animate({top: "10px"});
         btn.animate({top: "-10px"});
     }, 4000);
-    
+
   /*
     //pre-load all images
     var images = []
@@ -18,7 +18,7 @@ $(document).ready(function () {
             images[i].src = preload.arguments[i]
         }
     }
-    
+
     preload(
         'images/calm.jpg',
         'images/rowing.jpg',
@@ -28,23 +28,13 @@ $(document).ready(function () {
         'images/profile/michelangelo.png',
         'images/profile/michelangelo.png'
     ) */
-    
-    var image = document.getElementById('landing'),
-    url = 'images/sunset-on-transit.jpg';
-    image.style.backgroundImage = 'images/loading.gif';
-    var tmp = new Image();
-    tmp.onload = function() {
-       image.style.backgroundImage = "url('"+url+"')";
-       // or insert some other special effect code here.
-    };
-    tmp.src = url;
-    
+
     //active class for nav buttons
     $("ul li").on("click", function () {
         $(this).addClass("activate");
         $(this).siblings().removeClass("activate");
     });
-    
+
   /*
     //moves navbar to top of window on scroll down
     $(window).bind('scroll', function () {
@@ -60,10 +50,10 @@ $(document).ready(function () {
     $('a[href*="#"]').click(function (event) {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1700);
+        }, 1200);
         event.preventDefault();
     });
-    
+
     //navbar close
     $('body').bind('click', function(e) {
         if($(e.target).closest('.navbar').length == 0) {
@@ -74,9 +64,9 @@ $(document).ready(function () {
             }
         }
     });
-    
+
     $('.nav a').on('click', function(){
         $('.navbar-toggle').click() //bootstrap 3.x by Richard
 });
-    
+
 });
