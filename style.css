@@ -312,7 +312,8 @@ footer {
 
 #team-details {
   width: 90%;
-  height: 75%;
+  min-height: 65%;
+  max-height: 75%;
   display: inline-block;
   border: 1px solid;
 }
