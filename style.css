@@ -5,6 +5,10 @@ html, body{
   padding: 0;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -78,31 +82,6 @@ img {
     color: rgba(0,0,0,0.7)
 }
 
-/**** MODALS *****/
-.modal-dialog{
-    height: 90%;
-}
-
-.modal-content{
-    height: 100%;
-}
-
-.modal-header{
-    position: relative;
-}
-
-.modal-body{
-    position: relative;
-    height: 80%;
-}
-
-.modal-footer{
-    position: relative;
-    opacity: 1 !important;
-    background-color: white !important;
-}
-
-
 /**** HOMEPAGE ****/
 
 /* Navigation bar */
@@ -110,15 +89,12 @@ img {
     margin: 0;
 }
 
-.navbar-default{
-    background-color: transparent;
-    border: none;
-    padding-top: 4px;
-    padding-bottom: 0px;
-}
-
-.navbar-fixed-top{
-    background-color: dimgray;
+.navbar-default {
+  background-color: dimgray;
+  border: none !important;
+  border-radius: 0 !important;
+  padding-top: 4px;
+  padding-bottom: 0px;
 }
 
 .top-level {
@@ -262,28 +238,23 @@ footer {
     padding: 0;
 }
 
-/* Meet the Team page */
-#meet{
-    margin: 0;
-    padding: 0;
-    background-color: gray;
-}
-
-.title-wrapper{
-    margin-bottom: 2%;
-    margin-top: 5%;
-    width: 100%;
-    text-align: center;
-}
-
-.title{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.section3{
+/* Meet the Team section */
+.section3 {
   width: 100%;
   height: 100%;
+  text-align: center;
+}
+
+.title-wrapper {
+  margin-bottom: 2%;
+  margin-top: 9%;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .profile-container {
@@ -298,14 +269,14 @@ footer {
 }
 
 .profile-item {
-    position: relative;
-    height: 80%;
-    width: 22%;
-    overflow: hidden;
-    margin: 0 1% 0 1%;
-    padding: 0;
-    display: inline-block;
-    z-index: 100;
+  position: relative;
+  height: 80%;
+  width: 22%;
+  overflow: hidden;
+  margin: 0 1% 0 1%;
+  padding: 0;
+  display: inline-block;
+  z-index: 100;
 }
 
 .profile-pic {
@@ -318,12 +289,15 @@ footer {
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 15px;
+}
+
+.grayscale {
   filter: gray; /* IE6-9 */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
-.profile-pic:hover {
+.grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0);
 }
@@ -334,6 +308,17 @@ footer {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+
+#team-details {
+  width: 90%;
+  height: 75%;
+  display: inline-block;
+  border: 1px solid;
+}
+
+.expanded {
+  height: 150%;
 }
 
 .btn-prev{

@@ -35,7 +35,7 @@ $(document).ready(function () {
         $(this).siblings().removeClass("activate");
     });
 
-  /*
+
     //moves navbar to top of window on scroll down
     $(window).bind('scroll', function () {
         var navHeight = $(window).height();
@@ -44,7 +44,7 @@ $(document).ready(function () {
         } else {
             $('nav').removeClass('navbar-fixed-top');
         }
-    }); */
+    });
 
     //slow scroll to sections
     $('a[href*="#"]').click(function (event) {
@@ -54,7 +54,7 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-    //navbar close
+    //navbar close on body click
     $('body').bind('click', function(e) {
         if($(e.target).closest('.navbar').length == 0) {
             // click happened outside of .navbar, so hide
@@ -65,8 +65,24 @@ $(document).ready(function () {
         }
     });
 
-    $('.nav a').on('click', function(){
-        $('.navbar-toggle').click() //bootstrap 3.x by Richard
-});
+    // navbar close on link click
+    $('.nav a').on('click', function () {
+        $('.navbar-toggle').click()
+    });
+
+    $('.details').on('click', function () {
+      var displayItem = $(this).closest('.profile-item');
+      var hideItems = $('.profile-item').not(displayItem);
+      $('#team-details').removeClass('hidden');
+      $(displayItem).find('.profile-pic').removeClass('grayscale');
+      $(hideItems).each(function () {
+        $(this).find('.profile-pic').addClass('grayscale');
+      })
+    })
+
+    $('#team-details').on('click', function () {
+      $(this).addClass('hidden');
+      $('.profile-pic').addClass('grayscale');
+    })
 
 });
