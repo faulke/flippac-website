@@ -41,8 +41,10 @@ $(document).ready(function () {
         var navHeight = $(window).height();
         if ($(window).scrollTop() > navHeight - 10) {
             $('nav').addClass('navbar-fixed-top');
+            $('nav').css('height', '60px');
         } else {
             $('nav').removeClass('navbar-fixed-top');
+            $('nav').css('height', '100%');
         }
     });
 
@@ -70,19 +72,27 @@ $(document).ready(function () {
         $('.navbar-toggle').click()
     });
 
-    $('.details').on('click', function () {
+    $('.details').on('click', function (e) {
+      e.preventDefault();
+      $(this).addClass('current');
       var displayItem = $(this).closest('.profile-item');
       var hideItems = $('.profile-item').not(displayItem);
-      $('#team-details').removeClass('hidden');
       $(displayItem).find('.profile-pic').removeClass('grayscale');
       $(hideItems).each(function () {
         $(this).find('.profile-pic').addClass('grayscale');
       })
+      var url = $(this).attr('href');
+      $.get(url, function(response) {
+        var data = $(response);
+        data = data.filter('#primary').html();
+        $('#team-details').empty().append(data).slideDown(500);
+      })
     })
 
     $('#team-details').on('click', function () {
-      $(this).addClass('hidden');
+      $(this).slideUp(500);
       $('.profile-pic').addClass('grayscale');
+      $('.details').removeClass('current');
     })
 
 });

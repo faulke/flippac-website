@@ -1,0 +1,23 @@
+{
+  "name": "rowing-website",
+  "version": "1.0.0",
+  "description": "Website for my Flippac camper build and expedition trip reports.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faulke/flippac-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faulke/flippac-website/issues"
+  },
+  "homepage": "https://github.com/faulke/flippac-website#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
