@@ -23,7 +23,6 @@ $(document).ready(function () {
         'images/beach.jpg',
         'images/build.jpg',
         'images/field.jpg',
-        'images/loading.gif',
         'images/profile/cait.jpg',
         'images/profile/camper-prof.jpg',
         'images/profile/evan.jpg',
