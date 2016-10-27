@@ -9,25 +9,26 @@ $(document).ready(function () {
         btn.animate({top: "-10px"});
     }, 4000);
 
-  /*
+
     //pre-load all images
-    var images = []
+    const images = []
     function preload () {
-        for (i = 0; i < preload.arguments.length; i++) {
+        for (let i = 0; i < preload.arguments.length; i++) {
             images[i] = new Image()
             images[i].src = preload.arguments[i]
         }
     }
 
     preload(
-        'images/calm.jpg',
-        'images/rowing.jpg',
-        'images/sunset-on-transit.jpg',
-        'images/profile/donatello.png',
-        'images/profile/raphael.png',
-        'images/profile/michelangelo.png',
-        'images/profile/michelangelo.png'
-    ) */
+        'images/beach.jpg',
+        'images/build.jpg',
+        'images/field.jpg',
+        'images/loading.gif',
+        'images/profile/cait.jpg',
+        'images/profile/camper-prof.jpg',
+        'images/profile/evan.jpg',
+        'images/profile/evan.jpg'
+    )
 
     //active class for nav buttons
     $("ul li").on("click", function () {
