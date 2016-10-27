@@ -1,0 +1,461 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  height: 60px;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+.anchor{
+    margin-bottom: 6%;
+    margin-right: 0;
+}
+
+.modals{
+    margin: 0;
+    padding: 0;
+}
+
+#landing{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-toggle{
+    margin-top: 1%;
+}
+
+.scroll-btn{
+    color: white;
+    font-size: 250%;
+    border-color: white !important;
+    margin-bottom: 1%;
+    text-shadow: 2px 4px 3px black;
+    box-shadow: 2px 4px 3px black;
+    border: 4px solid white;
+    border-radius: 100%;
+}
+
+
+.btn-wrapper{
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    padding: 0;
+    padding: 0;
+    z-index: 99999;
+}
+
+.btn-container{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav > li > a {
+    font-family: Raleway;
+}
+
+.container1 {
+    height: 100%;
+}
+
+.activate{
+    color: rgba(0,0,0,0.7)
+}
+
+/**** HOMEPAGE ****/
+
+/* Navigation bar */
+.navbar {
+  margin: 0;
+  background-color: dimgray;
+  border: none !important;
+  border-radius: 0 !important;
+  padding-top: 4px;
+  padding-bottom: 0px;
+  height: 100%;
+  z-index: 100;
+}
+
+.top-level {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    width: 100%;
+    text-align: center;
+    padding:0;
+    margin: 0;
+    background-color: dimgray;
+}
+
+.top-level > li {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 3%;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+.top-level > li > a{
+    color: white !important;
+}
+
+/*
+.dropdown-menu > li > a {
+    background-color: cadetblue;
+    color: white;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    padding: 0;
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+*/
+
+a{
+    cursor: pointer;
+    cursor: hand;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+a:focus,
+button:focus{
+    outline: none !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: lightgray !important;
+}
+
+.navbar-default .navbar-toggle:focus{
+    background-color: rgba(0,0,0,0.3) !important;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background-color: rgba(0,0,0,0.3) !important;
+}
+
+/* Scroll button */
+.btn-wrapper {
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+#myCarousel {
+  height: 100%;
+  padding-top: 60px;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-caption{
+  bottom: 40%;
+}
+
+.carousel-caption h2 {
+  font-size: 120px;
+  letter-spacing: -4px;
+  font-weight: bold;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* About page */
+.section2{
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.jumbotron{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0;
+}
+
+/* Meet the Team section */
+.section3 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.title-wrapper {
+  margin-bottom: 2%;
+  margin-top: 9%;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-container {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+.profile-title {
+  height: 12%;
+  text-align: center;
+}
+
+.profile-item {
+  position: relative;
+  height: 80%;
+  width: 22%;
+  overflow: hidden;
+  margin: 0 1% 0 1%;
+  padding: 0;
+  display: inline-block;
+  z-index: 100;
+}
+
+.profile-pic {
+  width: 100%;
+	padding-bottom: 100%;
+	height: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.grayscale {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.profile-pic .details {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#team-details {
+  width: 100%;
+  display: none;
+  border: 1px solid;
+}
+
+.expanded {
+  height: 150%;
+}
+
+.btn-prev{
+    float: left !important;
+}
+
+#primary {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1075px) {
+
+  [class*="col-"]{
+      margin-bottom: 1%;
+  }
+
+    .title-wrapper{
+        margin-top: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 989px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-container {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 377px) {
+    .title{
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .profile-item{
+        height: 30%;
+    }
+}
+
+@media only screen and (max-height: 716px) {
+    .profile-item{
+        height: 75%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .profile-item{
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .scroll-btn{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-height: 350px){
+    .btn-wrapper{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+  		top: 0;
+  		border-width: 0 0 1px;
+	   }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+		  margin-top: 7.5px;
+	   }
+	  .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	  }
+}
+
+/** TEAM DETAILS **/
+#primary {
+  padding-top: 60px;
+  height: 100%;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

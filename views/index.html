@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid nav-container">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav top-level">
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#meet">Meet the Team</a></li>
+                    <li><a href="#reports">Trip Reports</a></li>
+                    <li><a href="#build">The Build</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/beach.jpg');"></div>
+                <div class="carousel-caption">
+                  <h2>FARAWAY FLIP</h2>
+                  <div class="">
+                    <h3></h3>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/map.jpg');"></div>
+                <div class="carousel-caption">
+                  <div class="">
+                    <h3>Check out our</h3>
+                  </div>
+                  <h2>TRIP REPORTS</h2>
+                  <button class="btn btn-danger">Read More</button>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/build.jpg');"></div>
+                <div class="carousel-caption">
+                  <h2>THE BUILD</h2>
+                  <div class="">
+                    <h3>Building a mobile basecamp on a budget</h3>
+                  </div>
+                  <button class="btn btn-danger">Read More</button>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/field.jpeg');"></div>
+                <div class="carousel-caption">
+                  <h2>BLOG</h2>
+                  <div class="">
+                    <h3>What are we up to? I dunno. Click below to find out.</h3>
+                  </div>
+                  <button class="btn btn-danger">Read More</button>
+                </div>
+            </div>
+            <!-- Scroll down button -->
+            <div class="btn-wrapper">
+                <div class="btn-container">
+                    <a href="#home"><span id="scroll-btn" class="glyphicon glyphicon-menu-down scroll-btn"><a href="#home"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    <div class="section2 container-fluid">
+        <div id="home" class="jumbotron"></div>
+    </div>
+    <div id="meet" class="section3 container-fluid">
+        <div class="title-wrapper">
+            <div class="title"><h1>Meet the Team</h1></div>
+        </div>
+        <!-- start team details -->
+        <div id="team-details"></div> <!-- TODO: $.get request for team detail content -->
+        <div id="team-loading"></div>
+        <!-- end team details -->
+        <div class="profile-container">
+          <div class="profile-item">
+            <div class="profile-title">
+              <h3>Evan</h3>
+            </div>
+            <div class="profile-pic grayscale" style="background-image:url(images/profile/evan.jpg);">
+              <a class="details" href="team/evan"></a>
+            </div>
+          </div>
+          <div class="profile-item">
+            <div class="profile-title">
+              <h3>Caitlin</h3>
+            </div>
+            <div class="profile-pic grayscale" style="background-image:url(images/profile/cait.jpg);">
+              <a class="details"></a>
+            </div>
+          </div>
+          <div class="profile-item">
+            <div class="profile-title">
+              <h3>Tom & Jerry</h3>
+            </div>
+            <div class="profile-pic grayscale" style="background-image:url(images/profile/camper-prof.jpg);">
+              <a class="details"></a>
+            </div>
+          </div>
+          <div class="profile-item">
+            <div class="profile-title">
+              <h3>Koda</h3>
+            </div>
+            <div class="profile-pic grayscale" style="background-image:url(images/profile/koda.jpg);">
+              <a class="details"></a>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
